@@ -22,3 +22,12 @@
 .red, .red:hover {
 	color: red;
 }
+
+.rotate {
+	position: absolute;
+}
+
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+.rotate, img.logo:hover {
+	-webkit-animation:spin 0.3s linear infinite;
+}

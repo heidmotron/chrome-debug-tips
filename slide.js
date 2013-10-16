@@ -26,6 +26,13 @@ function main() {
 		amount += 1
 	}
 	$('#cond-button').on('click', condIncrement)
+
+
+	function rotate() {
+		$(this).toggleClass('rotate')
+	}
+
+	$('#mouseover').on('mouseover mouseout', rotate)
 }
 
 
