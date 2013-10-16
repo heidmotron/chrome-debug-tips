@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <title>Chrome Debug Tips</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="slide.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><img src="favicon.png" /> Hi there, I'm matt</h1>
+
+      <div>
+        <div><a href="#cmd-alt-j"><pre>cmd alt j</pre></a></div>
+        <div><a href="#cmd-+"><pre>cmd +</pre></a></div>
+        <div><a href="#$0"><pre>$0</pre></a></div>
+        <div><a href="#cmd-h"><pre>cmd-h</pre></a></div>
+        <div><a href="#-$x"><pre>$x</pre></a></div>
+        <div><a href="#{}"><pre>{ }</pre></a></div>
+        <div><a href="#purple"><pre>Purple Uncaught Exceptions Button</pre></a></div>
+        <div><a href="#bp-cond"><pre>Conditional Breakpoints</pre></a></div>
+        <div><a href="#bp-dom"><pre>DOM Breakpoints</pre></a></div>
+        <div><a href="#bp-xhr"><pre>XHR Breakpoints</pre></a></div>
+        <div><a href="#bp-event"><pre>Event Listener Breakpoints</pre></a></div>
+        <div><a href="#credits"><pre>Credits</pre></a></div>
+
+      </div>
+      <div class="big-bumper"></div>
+
+      <div id="cmd-alt-j" class="slide">
+        <h1>cmd alt j</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            Opens the developer console
+          </div>
+        </div>
+        <a class="next" href="#cmd-+">Next</a>
+      </div>
+
+      <div id="cmd-+" class="slide">
+        <h1>cmd +</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            Increases the font
+          </div>
+        </div>
+        <a class="next" href="#$0">Next</a>
+      </div>
+
+      <div id="$0" class="slide">
+        <h1>$0</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            $0 represents the currently selected Elements panel
+          </div>
+        </div>
+        <a class="next" href="#cmd-h">Next</a>
+      </div>
+
+      <div id="cmd-h" class="slide">
+        <h1>cmd-h</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            hides the currently selected element
+          </div>
+        </div>
+        <a class="next" href="#-$x">Next</a>
+      </div>
+
+      <div id="-$x" class="slide">
+        <h1>$x</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            $x is xpath shortcut function for the console panel
+          </div>
+        </div>
+        <a class="next" href="#{}">Next</a>
+      </div>
+
+      <div id="{}" class="slide">
+        <h1>{ }</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            <img src="curly.png"/> Pretty prints minified code
+          </div>
+        </div>
+        <a class="next" href="#purple">Next</a>
+      </div>
+
+      <div id="purple" class="slide">
+        <h1>Purple Uncaught Exceptions</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            <img src="purple.png"/> Breaks on uncaught exception <button id="error">error</button>
+          </div>
+        </div>
+        <a class="next" href="#bp-cond">Next</a>
+      </div>
+
+      <div id="bp-cond" class="slide">
+        <h1>Conditional Breakpoints</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            Breaks when a condition is met on manual breakpoints <button id="cond-button">Press me</button>
+          </div>
+        </div>
+        <a class="next" href="#bp-dom">Next</a>
+      </div>
+
+      <div id="bp-dom" class="slide">
+        <h1>Dom Breakpoints</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            Breaks on <a id="node-rem">Node Removal</a>, <a id="sub-tree">Subtree</a> &amp; <a id="attr-mod">Attribute Modification</a>
+          </div>
+        </div>
+        <a class="next" href="#bp-xhr">Next</a>
+      </div>
+
+      <div id="bp-xhr" class="slide">
+        <h1>XHR Breakpoints</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            Breaks when XHR matches url set
+          </div>
+        </div>
+        <a class="next" href="#bp-event">Next</a>
+      </div>
+
+      <div id="bp-event" class="slide">
+        <h1>Event Listener Breakpoints</h1>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            Breaks when event listener of a selected type is called
+          </div>
+        </div>
+        <a class="next" href="#credits">Next</a>
+      </div>
+
+      <div class="bumper"></div>
+    </div>
+    <script src="underscore-min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="slide.js"></script>
+  </body>
+</html>

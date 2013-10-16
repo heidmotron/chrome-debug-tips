@@ -1,0 +1,24 @@
+.slide {
+  padding-top: 5px;
+  height: 300px;
+  position: relative;
+}
+
+.slide .next {
+  position: absolute;
+  font-size: 20px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.bumper {
+  height: 200px;
+}
+
+.big-bumper {
+  height: 800px;
+}
+
+.red, .red:hover {
+	color: red;
+}
